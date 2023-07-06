@@ -1,0 +1,30 @@
+{
+    "lessons": [
+        {
+             "number":1,
+             "theme":"Что такое боты?",
+             "url":"https://www.youtube.com/watch?v=-6aesuE9oP4",
+             "task":"Что такое боты?"
+        },{
+            "number":2,
+            "theme":" Работа с API",
+            "url":"https://www.youtube.com/watch?v=qoBJ6fO9ttA",
+            "task":"Что такое API?"
+        },{
+            "number":3,
+            "theme":"Регистрация бота",
+            "url":"https://www.youtube.com/watch?v=DU9K1rIUWrY",
+            "task":"Как зарегистрировать бота?"
+        },{
+            "number":4,
+            "theme":"Создание простого бота",
+            "url":"https://www.youtube.com/watch?v=8rVMKlg6iwU",
+            "task":"Как создать бота?"
+        },{
+            "number":5,
+            "theme":"Настройки Bot Father 1",
+            "url":"https://www.youtube.com/watch?v=LB5_P8Q4oN0",
+            "task":"Как настроить Bot Father?"
+        }
+    ]
+}
