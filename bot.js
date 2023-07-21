@@ -103,17 +103,25 @@ bot.onText(/\/video/, (msg) => {
 })
 bot.onText(/\/task/, (msg) => {
     try {
-        const { number } = getSession(msg.chat.id)
         const lesson = course.lessons.find(lesson => lesson.number === number)
+        const { number } = getSession(msg.chat.id)
+        if(lesson.buttons){
+            const cButtons = [...lesson.buttons]
+            const buttons = cButtons.map((str, i) => {
+                bot.sendMessage(msg.chat.id, {reply_markup:{
+                    inline_keyboard:[
+                        [
+                            {
+                                text: str,
+                                callback_data:'a'
+                            }
+                        ]
+                    ]
+                }
+                })
+            })
+        }
         bot.sendMessage(msg.chat.id, lesson.task)
-        bot.sendMessage(msg.chat.id, {reply_markup:{
-            keyboard:[
-                [
-                    lesson.answers[1]
-                ]
-            ]
-        
-        }})
     } catch (error) {
         console.log(error)
     }

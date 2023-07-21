@@ -5,7 +5,7 @@
              "theme":"Что такое боты?",
              "url":"https://www.youtube.com/watch?v=-6aesuE9oP4",
              "task":"Что такое боты?",
-             "answers":["Программа","Робот","ИИ"],
+             "buttons":["Программа","Робот","ИИ"],
              "rightAnswer":"Программа"
         },{
             "number":2,
